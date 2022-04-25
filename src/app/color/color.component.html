@@ -1,0 +1,26 @@
+<div class="container">
+  <label>
+    Red:
+    <input type="range" min="0" max="255" [(ngModel)]="red" (change)="changeColor()">
+    <span>{{red}}</span>
+  </label>
+  <br>
+  <label>
+    Green:
+    <input type="range" min="0" max="255" [(ngModel)]="green" (change)="changeColor()">
+    <span>{{green}}</span>
+  </label>
+  <br>
+  <label>
+    Blue:
+    <input type="range" min="0" max="255" [(ngModel)]="blue" (change)="changeColor()">
+    <span>{{blue}}</span>
+  </label>
+  <br>
+</div>
+<div class="container">
+  <label>
+    Output: <span>#{{hex}}</span>
+    <div class="color-output" style="width:200px;height:200px;" style.background-color="rgb({{red}}, {{green}}, {{blue}})"></div>
+  </label>
+</div>
